@@ -1,0 +1,127 @@
+body {
+    overflow-x: hidden;
+}
+
+img {
+	max-width: 100%;
+}
+
+.navigation {
+    z-index: 9;
+}
+
+.navigation img{
+    max-width: 40px;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.navigation .logo{
+    display: inline-block;
+    font-size: 1.4em;
+    vertical-align: middle;
+}
+
+.footer .copyright:before {
+    content: "© ";
+}
+
+.icon-wrap {
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.demo-note {
+    text-align: right;
+}
+
+.demo-note small{
+    top: 50%;
+    position: relative;
+    height: fit-content;
+    display: block;
+    transform: translateY(-50%);
+    color: #ddd;
+    font-style: italic;
+}
+
+.footer small,
+.footer a {
+    text-decoration: none;
+    color: #929292;
+}
+
+.slice-45 {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 0; 
+  height: 0; 
+  border-right: 60vw solid transparent;
+  border-top: 250vh solid white;
+}
+
+.angle-image {
+    max-width: 80%;
+    overflow: hidden;
+}
+
+.angle-image .crop-cut{
+  height: 100%;
+  width: 130%;
+  overflow: hidden;
+  transform: rotate(-90deg);
+
+}
+
+.angle-image .crop-cut img{
+  transform: rotate(45deg);
+}
+
+@media screen and (max-width: 768px){
+    .navigation {
+        background: #fff !important;
+        position: relative !important;
+    }
+    
+    .navigation .col-12 {
+        text-align: center !important;
+    }
+
+    .navigation .demo-note {
+        margin-bottom: 30px;
+    }
+
+    .header-section .w-50 {
+        width: 90% !important;
+        font-size: 0.9em;
+        margin-top: 20%
+    }
+
+    .header-section .slice-45{
+        border-right: 0;
+        border-top: 0;
+        border-right: 100vh solid transparent;
+        border-bottom: 50vw solid white;
+        margin-top: 10vw
+    }
+
+    .header-section .image-fluid{
+        margin-bottom: 40%
+    }
+
+    .header-section {
+        background:#fff !important;
+    }
+
+    .sub-header-section .w-50 {
+      margin-left: auto;
+      margin-right: auto;
+      width: 75% !important;
+  }
+
+}
